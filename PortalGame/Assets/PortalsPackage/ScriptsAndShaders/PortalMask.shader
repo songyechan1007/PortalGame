@@ -1,3 +1,53 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:869fb64cdb1871824055e893b96ee4abfd8dde7f27f466f2fb6149fd34af037f
-size 809
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
+
+Shader "Portals/Mask"
+{
+Properties {
+}
+	SubShader 
+	{
+		Tags { "RenderType"="Tranperent" "Queue"="Geometry-100"}
+		ColorMask 0
+		Cull Off
+		ZWrite Off
+		Stencil 
+		{
+			Ref 2
+			Comp always
+			Pass replace
+		}
+		
+		Pass
+		{
+		CGPROGRAM
+			#pragma vertex vert
+			#pragma fragment frag
+
+			struct appdata 
+			{
+				float4 vertex : POSITION;
+			};
+			
+			struct v2f 
+			{
+				float4 pos : SV_POSITION;
+			};
+			
+			v2f vert(appdata v) 
+			{
+				v2f o;
+				o.pos = UnityObjectToClipPos(v.vertex);
+				return o;
+			}
+			
+			half4 frag(v2f i) : COLOR 
+			{
+				return half4(1,1,0,1);
+			}
+		ENDCG
+		}
+	}
+}
