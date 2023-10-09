@@ -1,14 +1,3 @@
-fileFormatVersion: 2
-guid: 6c972b7ef7be64049a73842994f83cca
-MonoImporter:
-  externalObjects: {}
-  serializedVersion: 2
-  defaultReferences:
-  - wallPortalPrefab: {fileID: 5818400365221501132, guid: f2f79bd77d361854ca6b2e878ad18921, type: 3}
-  - wallPrefab: {fileID: 5534415749970956328, guid: 805898399e513e5459535238855f0e9f, type: 3}
-  - groundPrefab: {fileID: 8538343727809257645, guid: 53bb5a85056239144945de8604406543, type: 3}
-  executionOrder: 0
-  icon: {instanceID: 0}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:645a3d074f2601e8c7141246d9326a2cf9d7632f69b91c41c82b9bac341a46be
+size 243
