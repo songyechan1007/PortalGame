@@ -1,27 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class CameraLookForMouse : MonoBehaviour
-{
-    public float sensitivity = 500f;
-    public float rotationX;
-    public float rotationY;
-
-    private void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
-    // 업데이트
-    void Update()
-    {
-        float x = Input.GetAxis("Mouse X");
-        float y = Input.GetAxis("Mouse Y");
-
-        rotationX += y * sensitivity * Time.deltaTime;
-        rotationY += x * sensitivity * Time.deltaTime;
-
-        transform.localEulerAngles = new Vector3(-rotationX , rotationY,0);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:95b6be0aee2e9919eb6df9b16d33d08b8e8d4f1307fe0e6790f1551f89fd7b05
+size 721
