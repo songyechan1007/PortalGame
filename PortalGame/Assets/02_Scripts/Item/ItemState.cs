@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f4bfcb87711d8ec3d3e8acd8f97fa0d57244ae769cbc84ac8b92cc68d09d5bd
-size 300
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ItemState : MonoBehaviour
+{
+    public int hotKey = -1;
+    public string itemName;
+
+    public int slotIndex = -1;
+    public bool isOn = false;
+
+    public SlotState hitObject_SlotState;
+
+}

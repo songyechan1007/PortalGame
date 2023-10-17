@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1c9318b7968bb0fc12dde2e43453c3bc39cc4d95ffd40e04b4f36be06924c58
-size 1065
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+public class MoveInventoryWindow : MonoBehaviour
+    , IDragHandler
+    /*
+    , IPointerClickHandler
+    , IEndDragHandler
+    , IPointerEnterHandler
+    , IPointerExitHandler
+    */
+{
+    public RectTransform parentRect;
+
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        Rect rect = GetComponent<RectTransform>().rect;
+        float halfWidth = rect.width / 2;
+        float halfHeight = rect.height / 2;
+
+        eventData.pointerDrag.transform.position = new Vector2(eventData.position.x, eventData.position.y - halfHeight + 50);
+        float calcX = Mathf.Clamp(eventData.pointerDrag.transform.position.x, halfWidth, parentRect.rect.width - halfWidth);
+        float calcY = Mathf.Clamp(eventData.pointerDrag.transform.position.y, halfHeight, parentRect.rect.height - halfHeight);
+
+        eventData.pointerDrag.transform.position = new Vector2(calcX, calcY);
+    }
+
+}
