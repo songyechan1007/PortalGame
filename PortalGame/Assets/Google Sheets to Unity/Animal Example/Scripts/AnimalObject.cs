@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20b42a960b99701d1cf9de8eabf62e40a7c5c522f20bcd4c3cec1a68ed5163ed
-size 573
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class AnimalObject : MonoBehaviour
+{
+    public Animal animal;
+
+
+    public Text nameTxt, healthTxt, attackTxt, defenceTxt;
+
+	// Use this for initialization
+	void Start ()
+    {
+        BuildAnimalInfo();	
+	}
+
+    public void BuildAnimalInfo()
+    {
+        nameTxt.text = animal.name;
+        healthTxt.text = "Health" + animal.health;
+        attackTxt.text = "Attack" + animal.attack;
+        defenceTxt.text = "Defence" + animal.defence;
+    }
+}
