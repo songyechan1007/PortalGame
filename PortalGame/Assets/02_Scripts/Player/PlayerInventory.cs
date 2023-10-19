@@ -1,22 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class PlayerInventory : MonoBehaviour
-{
-
-    public Dictionary<string,int> itemCount = new Dictionary<string,int>();
-    public Dictionary<string, GameObject> itemObjectByName = new Dictionary<string, GameObject>();
-    public Dictionary<string,Sprite> itemPictureList = new Dictionary<string,Sprite>();
-    public List<GameObject> itemSlots;
-    public Text itemCountText;
-
-    public int hasItemCount = 0;
-    public int hasItemMaxCount = 16;
-
-    private void Start()
-    {
-        hasItemMaxCount = itemSlots.Count;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c8d05e97da3c3b8e4176e574de482f0bacad4a6561db944b6262bb4feb3effb
+size 659
