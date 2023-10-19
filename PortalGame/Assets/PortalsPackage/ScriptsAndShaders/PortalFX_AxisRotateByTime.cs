@@ -1,20 +1,3 @@
-﻿using System;
-using UnityEngine;
-using System.Collections;
-
-[ExecuteInEditMode]
-
-public class PortalFX_AxisRotateByTime : MonoBehaviour {
-
-    public Vector3 RotateAxis = new Vector3(1, 5, 10);
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-
-	// Update is called once per frame
-	void Update () {
-        transform.Rotate(RotateAxis * Time.deltaTime);
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:793d5e489aa57925ec7140f87232df04b59126883943fb3074461b06b59e7d96
+size 367

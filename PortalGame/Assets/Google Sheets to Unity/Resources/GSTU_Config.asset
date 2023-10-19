@@ -1,25 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c84b370c07161d418509239739a9524, type: 3}
-  m_Name: GSTU_Config
-  m_EditorClassIdentifier: Assembly-CSharp:GoogleSheetsToUnity:GoogleSheetsToUnityConfig
-  CLIENT_ID: 375314631312-30ba59n54iiu7nsg3isbnd7bssfcf6gs.apps.googleusercontent.com
-  CLIENT_SECRET: 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
-  ACCESS_TOKEN: 
-  REFRESH_TOKEN: 1/kqepo9i9qIVDShLRC2c0kJgb-3DYKJevwVTF6LAfGGM
-  API_Key: 
-  PORT: 8070
-  gdr:
-    access_token: ya29.a0AfB_byCKF9JZfN9X4aQEtagnmgJmV9QjRyxyOX00GHGe27NlOBdSu92FeT7O0mcRwxUDDi-91fPd7csXRcCMT-SRwZu7BcgIyfX8H6Fj8GGja6g9n0XsapAhpF2IuT0yR3fsKKv4y4xtEQ5j9PoXbTPkZlC6yfgC6QbnaCgYKARcSARMSFQGOcNnCih_gCwQoVHzDXRXffbDH6g0171
-    refresh_token: 1//0eZOKPgxUSTaHCgYIARAAGA4SNwF-L9Irh6lEImIBgTfbYqehvVq5puqvy0ZdvMdSwkPKMzdvCLlhdaEkNblp3AelmO4sQmK5d8A
-    token_type: Bearer
-    expires_in: 3599
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f12b5ae9893ceef84d3b33ea20591f4564b3502c7bfb7e44d18cdae720be0ad
+size 1116

@@ -1,13 +1,3 @@
-fileFormatVersion: 2
-guid: 6449059ea69669b4cac66cd9de185980
-labels:
-- Cliff
-- Nature
-- Pattern
-- Rock
-- Stone
-- Terrain
-NativeFormatImporter:
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:8b43a491bfabc6fa1d23644503f4df7873a2dfd159d245418c51d2a1d2af19e7
+size 198

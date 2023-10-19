@@ -1,20 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cd5ad776f921664895987a23a4fa517, type: 3}
-  m_Name: Cat
-  m_EditorClassIdentifier: 
-  associatedSheet: 1GVXeyWCz0tCjyqE1GWJoayj92rx4a_hu4nQbYmW_PkE
-  associatedWorksheet: Stats
-  health: 100
-  attack: 100
-  defence: 100
-  items:
-  - A
+version https://git-lfs.github.com/spec/v1
+oid sha256:02911d90339adff0e98f4b49a7b62cb81a6a33d7693ba17886379c91c14e69dc
+size 507
